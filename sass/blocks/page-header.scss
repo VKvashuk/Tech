@@ -1,0 +1,238 @@
+// @import "variables.scss";
+
+.header {
+  background: url('../img/bg.jpg');
+  background-size: cover;
+  color: $text-white;
+
+  a {
+    text-decoration: none;
+    color: $text-white;
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    width: 1250px;
+    margin: 0 auto;
+    padding-left: 10px;
+
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: baseline;
+    padding-top: 50px;
+
+  }
+
+  &__logo h1 {
+    font-size: 38px;
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+  }
+
+  &__nav-items {
+    margin: 0;
+    margin-top: 6px;
+    margin-right: 42px;
+  }
+
+  &__nav-item {
+    list-style: none;
+    display: inline-block;
+    margin-left: 70px;
+  }
+
+  &__nav-item a:hover {
+    color: #0084f9;
+    
+  }
+
+  &__nav-item a {
+    font-size: 17px;
+    font-weight: 700;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  }
+
+  &__text {
+    font-weight: 600;
+    margin-left: 15px;
+    margin-top: 158px;
+  }
+
+  &__tagline {
+    font-size: 56px;
+    line-height: 80px;
+    margin-top: 29px;
+    margin-left: 12px;
+    margin-bottom: 59px;
+    width: 650px;
+  }
+
+  &__link {
+    display: block;
+    width: 316px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    background: linear-gradient(to bottom, rgba(0,77,205,1) 0%, rgba(0,97,254,1) 100%);
+    border-radius: 4px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    margin-left: 13px;
+    margin-bottom: 168px;
+  }
+
+  &__link:hover {
+    background: linear-gradient(to bottom, rgba(0,77,205,1) 0%, darken(rgba(0,97,254,1), 10%)  100%);
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__more {
+    font-size: 17px;
+    font-weight: 700;
+    padding-left: 33px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+   &__more:hover {
+     span{
+      transform: translateY(4px);
+     }
+    
+  }
+
+  &__more span {
+    content: "";
+    position: absolute;
+    background: url('../img/arrow.png') no-repeat;
+    width: 12px;
+    height: 17px;
+    top: 3px;
+    left: 1px;
+    transition: transform;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    }
+
+    &__social {
+      margin-right: 41px;
+    }
+
+    &__btn {
+      display: block;
+      font-size: 0px;
+      width: 16px;
+      height: 16px;
+      display: inline-block;box-shadow: 0px 0px 9px -7px rgba(0,0,0,0.4);
+      vertical-align: center;
+      margin-left: 23px;
+      transition: transform;
+      transition-duration: 500ms;
+      transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    }
+
+    &__btn--fb {
+      background: url('../img/facebook.png')no-repeat center;
+    }
+
+    &__btn--tg {
+      background: url('../img/telegram.png')no-repeat center;
+    }
+
+    &__btn--inst {
+      background: url('../img/instagram.png')no-repeat center;
+    }
+
+    &__btn:hover {
+      transform: scale(1.2);
+    }
+
+}
+
+@media ($tablet-widths) { 
+.header {
+ 
+
+  &__wrapper {
+    width: auto;
+    padding-left: 15px;
+
+  }
+}
+}
+
+@media ($mobile-widths) { 
+.header {
+
+
+  &__wrapper {
+  
+    padding-left: 10px;
+
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+
+  &__logo h1 {
+   
+    text-align: center;
+    // margin: 0;
+    
+  }
+    
+  &__nav-item {
+    list-style: none;
+    display: inline-block;
+    margin-left: 0px;
+  }
+
+
+  &__nav-items {
+    margin: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__text {
+    margin-top: 100px;
+  }
+
+  &__tagline {
+    font-size: 7vw;
+    line-height: 9vw;
+    margin-top: 29px;
+    margin-bottom: 59px;
+    width: auto;
+  }
+
+  &__link {
+    width: 260px;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    margin-bottom: 168px;
+  }  
+ 
+}
+}
+
