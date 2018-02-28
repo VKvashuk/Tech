@@ -250,7 +250,7 @@ body {
   .slider__btn--white {
     background: transparent;
     color: #0084f9;
-    width: 270px; }
+    width: 260px; }
 
 .slider__btn:hover {
   background: linear-gradient(to bottom, #004dcd 0%, #004ecb 100%); }
